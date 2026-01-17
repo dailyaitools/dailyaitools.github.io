@@ -3,23 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily AI Tools</title>
 
-<meta name="description" content="Best free AI tools in one place">
+<title>Daily AI Tools – Best Free AI Tools</title>
+<meta name="description" content="Discover best free AI tools like ChatGPT, Canva AI, Grammarly, Remove.bg and more at one place.">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- PERFORMANCE -->
+<link rel="preconnect" href="https://logo.clearbit.com">
+<link rel="dns-prefetch" href="https://logo.clearbit.com">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Inter',sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
 
 body{
-  background:#f4f6fb;
-  color:#111;
+  background:#f5f7fa;
+  color:#222;
 }
 
 /* HEADER */
@@ -32,16 +29,16 @@ header{
 
 header h1{
   font-size:34px;
+  margin-bottom:8px;
 }
 
 header p{
   opacity:.9;
-  margin-top:6px;
 }
 
 /* SEARCH */
 .search-box{
-  max-width:420px;
+  max-width:600px;
   margin:25px auto 0;
 }
 
@@ -50,44 +47,47 @@ header p{
   padding:14px 18px;
   border-radius:30px;
   border:none;
+  font-size:16px;
   outline:none;
-  font-size:15px;
 }
 
-/* GRID */
+/* TOOLS GRID */
 .container{
   max-width:1200px;
-  margin:40px auto;
+  margin:50px auto;
   padding:0 20px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:22px;
 }
 
-/* CARD */
+.tools{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
 .tool{
   background:#fff;
-  border-radius:14px;
-  padding:22px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
-  transition:.3s;
+  border-radius:16px;
+  padding:20px;
   cursor:pointer;
+  transition:.3s;
+  box-shadow:0 10px 25px rgba(0,0,0,.07);
 }
 
 .tool:hover{
   transform:translateY(-6px);
+  box-shadow:0 18px 35px rgba(0,0,0,.12);
 }
 
 .tool img{
-  width:100%;
-  height:90px;
+  width:80px;
+  height:80px;
   object-fit:contain;
-  margin-bottom:18px;
+  margin-bottom:15px;
 }
 
 .tool h3{
-  font-size:18px;
   margin-bottom:6px;
+  font-size:18px;
 }
 
 .tool p{
@@ -100,77 +100,81 @@ footer{
   background:#111;
   color:#aaa;
   text-align:center;
-  padding:18px;
+  padding:20px;
+  margin-top:60px;
   font-size:14px;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>🤖 Daily AI Tools</h1>
+  <h1>Daily AI Tools</h1>
   <p>All useful AI tools in one place</p>
 
   <div class="search-box">
-    <input type="text" id="search" placeholder="Search AI tools...">
+    <input type="text" id="search" placeholder="Search AI tools..." onkeyup="searchTools()">
   </div>
 </header>
 
-<section class="container" id="tools">
+<div class="container">
+  <div class="tools" id="tools">
 
-  <div class="tool" onclick="openLink('https://chat.openai.com')">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg">
-    <h3>ChatGPT</h3>
-    <p>Chatbot for writing, coding and learning.</p>
+    <div class="tool" onclick="openLink('https://chat.openai.com')">
+      <img src="https://logo.clearbit.com/openai.com" loading="lazy">
+      <h3>ChatGPT</h3>
+      <p>AI chatbot for writing, coding and learning.</p>
+    </div>
+
+    <div class="tool" onclick="openLink('https://www.canva.com/ai')">
+      <img src="https://logo.clearbit.com/canva.com" loading="lazy">
+      <h3>Canva AI</h3>
+      <p>Create designs, posts and presentations.</p>
+    </div>
+
+    <div class="tool" onclick="openLink('https://www.grammarly.com')">
+      <img src="https://logo.clearbit.com/grammarly.com" loading="lazy">
+      <h3>Grammarly</h3>
+      <p>Improve grammar and writing quality.</p>
+    </div>
+
+    <div class="tool" onclick="openLink('https://www.remove.bg')">
+      <img src="https://logo.clearbit.com/remove.bg" loading="lazy">
+      <h3>Remove.bg</h3>
+      <p>Remove image background automatically.</p>
+    </div>
+
+    <div class="tool" onclick="openLink('https://www.copy.ai')">
+      <img src="https://logo.clearbit.com/copy.ai" loading="lazy">
+      <h3>Copy.ai</h3>
+      <p>AI copywriting for ads and blogs.</p>
+    </div>
+
+    <div class="tool" onclick="openLink('https://quillbot.com')">
+      <img src="https://logo.clearbit.com/quillbot.com" loading="lazy">
+      <h3>QuillBot</h3>
+      <p>Rewrite and paraphrase content.</p>
+    </div>
+
+    <div class="tool" onclick="openLink('https://pictory.ai')">
+      <img src="https://logo.clearbit.com/pictory.ai" loading="lazy">
+      <h3>Pictory</h3>
+      <p>Convert text into AI videos.</p>
+    </div>
+
+    <div class="tool" onclick="openLink('https://leonardo.ai')">
+      <img src="https://logo.clearbit.com/leonardo.ai" loading="lazy">
+      <h3>Leonardo AI</h3>
+      <p>Create stunning AI artwork.</p>
+    </div>
+
   </div>
-
-  <div class="tool" onclick="openLink('https://www.canva.com')">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Canva_logo.svg">
-    <h3>Canva AI</h3>
-    <p>Create designs, posts and presentations.</p>
-  </div>
-
-  <div class="tool" onclick="openLink('https://www.grammarly.com')">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Grammarly_logo.svg">
-    <h3>Grammarly</h3>
-    <p>Improve grammar and writing quality.</p>
-  </div>
-
-  <div class="tool" onclick="openLink('https://www.remove.bg')">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Remove.bg_logo.png">
-    <h3>Remove.bg</h3>
-    <p>Remove image background automatically.</p>
-  </div>
-
-  <div class="tool" onclick="openLink('https://www.copy.ai')">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Copy.ai_logo.png">
-    <h3>Copy.ai</h3>
-    <p>AI copywriting for ads and blogs.</p>
-  </div>
-
-  <div class="tool" onclick="openLink('https://quillbot.com')">
-    <img src="https://quillbot.com/images/logo.svg">
-    <h3>QuillBot</h3>
-    <p>Rewrite and paraphrase content.</p>
-  </div>
-
-  <div class="tool" onclick="openLink('https://pictory.ai')">
-    <img src="https://pictory.ai/assets/images/logo.svg">
-    <h3>Pictory</h3>
-    <p>Convert text into AI videos.</p>
-  </div>
-
-  <div class="tool" onclick="openLink('https://leonardo.ai')">
-    <img src="https://leonardo.ai/favicon.ico">
-    <h3>Leonardo AI</h3>
-    <p>Create stunning AI artwork.</p>
-  </div>
-
-</section>
+</div>
 
 <footer>
-  © 2026 Daily AI Tools
+  © 2026 Daily AI Tools — All rights reserved
 </footer>
 
 <script>
@@ -178,15 +182,14 @@ function openLink(url){
   window.open(url,'_blank');
 }
 
-const search = document.getElementById("search");
-const tools = document.querySelectorAll(".tool");
-
-search.addEventListener("keyup",()=>{
-  let value = search.value.toLowerCase();
-  tools.forEach(tool=>{
-    tool.style.display = tool.innerText.toLowerCase().includes(value) ? "block" : "none";
-  });
-});
+function searchTools(){
+  let input=document.getElementById("search").value.toLowerCase();
+  let tools=document.getElementsByClassName("tool");
+  for(let i=0;i<tools.length;i++){
+    let text=tools[i].innerText.toLowerCase();
+    tools[i].style.display = text.includes(input) ? "block" : "none";
+  }
+}
 </script>
 
 </body>
