@@ -5,12 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily AI Tools</title>
 
-<!-- SEO -->
-<meta name="description" content="Daily AI Tools – Best free AI tools in one place">
-<meta name="keywords" content="AI tools, free AI tools, ChatGPT, Canva AI">
-<meta name="author" content="Daily AI Tools">
+<meta name="description" content="Best free AI tools in one place">
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -22,21 +18,20 @@
 }
 
 body{
-  background:#f5f7fb;
+  background:#f4f6fb;
   color:#111;
 }
 
 /* HEADER */
 header{
   background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-  padding:35px 20px;
-  text-align:center;
   color:#fff;
+  padding:40px 20px;
+  text-align:center;
 }
 
 header h1{
   font-size:34px;
-  font-weight:700;
 }
 
 header p{
@@ -59,7 +54,7 @@ header p{
   font-size:15px;
 }
 
-/* TOOLS GRID */
+/* GRID */
 .container{
   max-width:1200px;
   margin:40px auto;
@@ -69,22 +64,23 @@ header p{
   gap:22px;
 }
 
-/* TOOL CARD */
+/* CARD */
 .tool{
   background:#fff;
   border-radius:14px;
   padding:22px;
-  box-shadow:0 8px 20px rgba(0,0,0,.06);
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
   transition:.3s;
+  cursor:pointer;
 }
 
 .tool:hover{
-  transform:translateY(-5px);
+  transform:translateY(-6px);
 }
 
 .tool img{
-  height:80px;
   width:100%;
+  height:90px;
   object-fit:contain;
   margin-bottom:18px;
 }
@@ -97,18 +93,6 @@ header p{
 .tool p{
   font-size:14px;
   color:#555;
-  min-height:38px;
-}
-
-.tool a{
-  display:inline-block;
-  margin-top:14px;
-  padding:9px 18px;
-  background:#000;
-  color:#fff;
-  border-radius:20px;
-  font-size:14px;
-  text-decoration:none;
 }
 
 /* FOOTER */
@@ -117,7 +101,6 @@ footer{
   color:#aaa;
   text-align:center;
   padding:18px;
-  margin-top:40px;
   font-size:14px;
 }
 </style>
@@ -136,70 +119,65 @@ footer{
 
 <section class="container" id="tools">
 
-  <!-- TOOL -->
-  <div class="tool">
-    <img src="https://cdn.simpleicons.org/openai/000000" loading="lazy">
+  <div class="tool" onclick="openLink('https://chat.openai.com')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg">
     <h3>ChatGPT</h3>
     <p>Chatbot for writing, coding and learning.</p>
-    <a href="https://chat.openai.com" target="_blank">Open</a>
   </div>
 
-  <div class="tool">
-    <img src="https://cdn.simpleicons.org/canva/00C4CC" loading="lazy">
+  <div class="tool" onclick="openLink('https://www.canva.com')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Canva_logo.svg">
     <h3>Canva AI</h3>
     <p>Create designs, posts and presentations.</p>
-    <a href="https://www.canva.com" target="_blank">Open</a>
   </div>
 
-  <div class="tool">
-    <img src="https://cdn.simpleicons.org/grammarly/15C39A" loading="lazy">
+  <div class="tool" onclick="openLink('https://www.grammarly.com')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Grammarly_logo.svg">
     <h3>Grammarly</h3>
     <p>Improve grammar and writing quality.</p>
-    <a href="https://www.grammarly.com" target="_blank">Open</a>
   </div>
 
-  <div class="tool">
-    <img src="https://cdn.simpleicons.org/removebg/000000" loading="lazy">
+  <div class="tool" onclick="openLink('https://www.remove.bg')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Remove.bg_logo.png">
     <h3>Remove.bg</h3>
     <p>Remove image background automatically.</p>
-    <a href="https://www.remove.bg" target="_blank">Open</a>
   </div>
 
-  <div class="tool">
-    <img src="https://cdn.simpleicons.org/copydotai/000000" loading="lazy">
+  <div class="tool" onclick="openLink('https://www.copy.ai')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Copy.ai_logo.png">
     <h3>Copy.ai</h3>
     <p>AI copywriting for ads and blogs.</p>
-    <a href="https://www.copy.ai" target="_blank">Open</a>
   </div>
 
-  <div class="tool">
-    <img src="https://cdn.simpleicons.org/quill/000000" loading="lazy">
+  <div class="tool" onclick="openLink('https://quillbot.com')">
+    <img src="https://quillbot.com/images/logo.svg">
     <h3>QuillBot</h3>
     <p>Rewrite and paraphrase content.</p>
-    <a href="https://quillbot.com" target="_blank">Open</a>
   </div>
 
-  <div class="tool">
-    <img src="https://cdn.simpleicons.org/youtube/FF0000" loading="lazy">
+  <div class="tool" onclick="openLink('https://pictory.ai')">
+    <img src="https://pictory.ai/assets/images/logo.svg">
     <h3>Pictory</h3>
     <p>Convert text into AI videos.</p>
-    <a href="https://pictory.ai" target="_blank">Open</a>
   </div>
 
-  <div class="tool">
-    <img src="https://cdn.simpleicons.org/adobe/FF0000" loading="lazy">
+  <div class="tool" onclick="openLink('https://leonardo.ai')">
+    <img src="https://leonardo.ai/favicon.ico">
     <h3>Leonardo AI</h3>
     <p>Create stunning AI artwork.</p>
-    <a href="https://leonardo.ai" target="_blank">Open</a>
   </div>
 
 </section>
 
 <footer>
-  © 2026 Daily AI Tools — All rights reserved
+  © 2026 Daily AI Tools
 </footer>
 
 <script>
+function openLink(url){
+  window.open(url,'_blank');
+}
+
 const search = document.getElementById("search");
 const tools = document.querySelectorAll(".tool");
 
