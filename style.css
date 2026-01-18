@@ -2,116 +2,100 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background: #f9fafb;
-  color: #1f2937;
+  background: #ffffff;
+  color: #222;
 }
 
-/* Navbar */
-.navbar {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: #ffffff;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 18px 60px;
+  border-bottom: 1px solid #eee;
 }
 
 .logo {
-  font-size: 26px;
-  font-weight: 700;
-  color: #ec4899;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff3f6c;
 }
 
 nav a {
-  margin-left: 25px;
+  margin-left: 20px;
   text-decoration: none;
-  color: #374151;
+  color: #333;
   font-weight: 500;
 }
 
-/* Hero */
 .hero {
   text-align: center;
   padding: 80px 20px;
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 18px;
-  color: #6b7280;
-  margin-bottom: 30px;
+  color: #666;
+  margin-bottom: 25px;
 }
 
 .hero input {
   width: 320px;
-  max-width: 90%;
-  padding: 14px 18px;
-  border-radius: 30px;
-  border: 1px solid #e5e7eb;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
   outline: none;
 }
 
-/* Tools grid */
 .tools {
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
+  padding: 40px 60px;
 }
 
 .tool-card {
-  background: #ffffff;
+  background: #fff;
+  border-radius: 16px;
   padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   text-align: center;
-  transition: transform 0.2s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
 }
 
 .tool-card:hover {
-  transform: translateY(-6px);
-}
-
-.tool-card img {
-  width: 70px;
-  margin-bottom: 15px;
+  transform: translateY(-5px);
 }
 
 .tool-card h3 {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .tool-card p {
-  font-size: 14px;
-  color: #6b7280;
+  color: #666;
+  margin-bottom: 20px;
 }
 
-.btn {
+.tool-card a {
   display: inline-block;
-  margin-top: 18px;
-  padding: 12px 26px;
-  background: #ec4899;
-  color: white;
-  border-radius: 999px;
+  padding: 10px 20px;
+  background: #ff3f6c;
+  color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  border-radius: 20px;
+  font-size: 14px;
 }
 
-/* Footer */
 footer {
   text-align: center;
-  padding: 30px;
-  color: #9ca3af;
+  padding: 20px;
+  color: #888;
   font-size: 14px;
 }
