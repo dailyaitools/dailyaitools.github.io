@@ -1,3 +1,4 @@
+alert("JS WORKING ✅");
 const searchInput = document.getElementById("search");
 const cards = document.querySelectorAll(".tool-card");
 
